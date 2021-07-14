@@ -1,0 +1,21 @@
+<div class="row lg-12 float-right mt-3 mb-3">    
+    <button [routerLink]="['/categoria/categoria-form']" class="btn btn-success"> Novo Usuário </button>        
+</div>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Descrição</th>
+        <th>Açoes</th>
+    </tr>
+
+    <tr *ngFor="let u of usuarios?.data">
+        <td> {{ u.id }}</td>
+        <td> {{ u.name }}</td>
+        <td> {{ u.description }}</td>
+        <td class="btn-group">
+        <button class="btn btn-info mr-2" [routerLink]="['/categoria/categoria-form', u.id]" >Editar</button>
+        <button class="btn btn-danger" (click)="onDelete( u.id )" > Deletar</button> </td>
+    </tr>
+</table>

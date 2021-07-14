@@ -1,0 +1,31 @@
+<p>primeiro works!</p>
+
+<!-- <app-usuario-list></app-usuario-list> -->
+
+<div class="row">
+
+
+    <div class="col-3">
+        <button (click)="alterarString()" class="btn btn-primary btn-lg tamanho-maior"> BTN1 </button>
+    </div>
+
+    <div class="col-8">
+        <button [class]="minhaClasse" *ngIf="minhaClasse == 'btn-success'"> BTN2 </button>
+    </div>   
+
+</div>
+
+<table class="table">
+    <tr>
+        <th>Id</th>
+        <th>Nome</th>
+        <th>Email</th>
+
+    </tr>
+    <tr *ngFor="let u of usuarios">
+        <td>{{ u.id }}</td>
+        <td>{{ u.nome }}</td>
+        <td>{{ u.email }}</td>
+    </tr>
+
+</table>
