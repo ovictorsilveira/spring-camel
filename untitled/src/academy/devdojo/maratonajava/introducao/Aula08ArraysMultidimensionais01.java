@@ -1,16 +1,27 @@
 package academy.devdojo.maratonajava.introducao;
 
-public class Aula07Arrays03 {
+public class Aula08ArraysMultidimensionais01 {
     public static void main(String[] args) {
-        int[] numeros = new int[3];
-        int[] numeros2 = {1, 2, 3, 4, 5};
-        int[] numeros3 = new int[]{5, 4, 3, 2, 1};
+       int[][] dias = new int[3][3];
 
-        for (int i = 0; i < numeros3.length; i++) {
-            System.out.println(numeros3[i]);
+        dias[0][0] = 31;
+        dias[0][1] = 23;
+        dias[0][2] = 44;
+
+        dias[1][0] = 25;
+        dias[1][1] = 12;
+        dias[1][2] = 56;
+
+    for (int i = 0; i < dias.length; i++){
+        for (int j = 0; j < dias [i].length; j++){
+            System.out.println(dias [i][j]);
         }
-        for(int num:numeros3){
+    }
+    for (int []arrBase:dias){
+        for(int num: arrBase){
             System.out.println(num);
         }
     }
+    }
 }
+

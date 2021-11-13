@@ -1,14 +1,17 @@
 package academy.devdojo.maratonajava.introducao;
 
-public class Aula07Arrays01 {
+public class Aula07Arrays02 {
     public static void main(String[] args) {
-        int [] idades = new int[3];
+        String [] nomes = new String[3];
+        nomes [0] = "Goku";
+        nomes [1] = "Kurosaki";
+        nomes [2] = "Luffy";
 
-        idades[0] = 21;
-        idades[1] = 15;
-        idades[2] = 11;
 
-        System.out.println(idades);
+        for (int i = 0; i < nomes.length; i++) {
+            System.out.println(nomes[i]);
+        }
+    nomes = new String[5];
 
     }
 }
