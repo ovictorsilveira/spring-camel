@@ -12,11 +12,13 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PokemonsModule } from './pokemons/pokemons.module';
 import { FormulariosModule } from './formularios/formularios.module';
 import { SharedModule } from './shared/shared.module';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PrimeiroComponent
+    PrimeiroComponent,
+    CicloComponent
   ],
   imports: [
     BrowserModule,

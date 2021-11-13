@@ -3,7 +3,7 @@
     [routerLink]="['/crud/crud-form']" routerLinkActive="active" >
    Novo Usuario
  </button>
-    
+
 </div>
 
 
@@ -18,11 +18,11 @@
     </tr>
     <tr *ngFor="let u of usuarios?.data">
         <td> {{ u.id }} </td>
-        <td> {{ u.name }} </td>
+        <td>  </td>
         <td> {{ u.email }} </td>
         <td>
             <button class="btn btn-info mr-2" [routerLink]="['/crud/crud-form', u.id]" >Editar</button>
-            <button class="btn btn-danger" (click)="onDelete( u.id )" >Deletar</button>
+            <button class="btn btn-danger" >Deletar</button>
         </td>
     </tr>
 </table>

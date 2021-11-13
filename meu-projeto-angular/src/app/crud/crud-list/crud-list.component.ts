@@ -1,3 +1,4 @@
+import { GoRestUserModel } from './../../shared/models/go-rest-user.model';
 import { CrudService } from './../crud.service';
 import { Component, OnInit } from '@angular/core';
 
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CrudListComponent implements OnInit {
 
-  usuarios: any = null;
+  usuarios? : GoRestUserModel;
   constructor(private crudService: CrudService) { }
 
   ngOnInit(): void {

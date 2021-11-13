@@ -1,3 +1,4 @@
+import { GoRestUserModel } from './../shared/models/go-rest-user.model';
 import { HttpClient , HttpHeaders} from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
@@ -12,7 +13,7 @@ export class CrudService {
   constructor(private http: HttpClient) { }
 
   getAll(){
-    return this.http.get(this.url);
+    return this.http.get<GoRestUserModel>(this.url);
   }
 
   getOne( id : number ){
